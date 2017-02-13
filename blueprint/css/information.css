@@ -21,7 +21,8 @@
 }
 #schedule .schedule-item .time {
   display: inline-block;
-  font-weight: 400;
+  font-weight: bold;  
+  /*font-weight: 400;*/
 }
 #schedule .schedule-item .location {
   font-size: 18px;

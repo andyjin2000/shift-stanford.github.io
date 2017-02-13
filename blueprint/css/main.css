@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
-  font-family: 'Yantramanav', sans-serif;
+  /*font-family: 'Yantramanav', sans-serif;*/
+  font-family: "Avenir Next", sans-serif;
   font-weight: 300;
 }
 .text-muted {
@@ -246,7 +247,8 @@ header {
   /*background: -webkit-linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
   background: -moz-linear-gradient(#ED2F3B, #F5634A, #FB9C60);
   /*background: linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
-  background : linear-gradient(#AB3F54, #D5634D, #FB6C40);
+  /*background : linear-gradient(#AB3F54, #D5634D, #FB6C40);*/
+  background : linear-gradient(#ef5b54, #f29160);
 
   color: white;
   display: flex;
@@ -469,7 +471,9 @@ section h3.section-subheading {
  
   background: -moz-linear-gradient(#ED2F3B, #F5634A, #FB9C60);
   /*background: linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
-  background : linear-gradient(#AB3F54, #D5634D, #FB6C40);
+  /*background : linear-gradient(#AB3F54, #D5634D, #FB6C40);*/
+  background : linear-gradient(#ef5b54, #f29160);
+
 
   color: white;
   display: flex;
