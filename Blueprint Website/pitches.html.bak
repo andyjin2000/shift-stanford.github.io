@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="health++">
+    <meta property="og:site_name" content="health++">
+    <meta property="og:title" content="health++">
+    <meta property="og:description" content="health++ is a two-day event that will bring together 300 engineers, designers, business experts, and healthcare professionals - faculty and students alike - for a weekend of innovating in healthcare affordability, both domestically and globally.">
+    <meta property="og:image" content="https://healthplusplus.github.io/img/logo_colored.png">
+    <title>health++ Pitches</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/pitches.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Yantramanav:100,300,400,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="remodal/dist/remodal.css">
+    <link rel="stylesheet" href="remodal/dist/remodal-default-theme.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Thin Header -->
+    <section id="thin-header" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1">
+                    <a href="/"><img class="header-logo" src="/img/logo_white.png"></a>
+                </div>
+                <div class="col-xs-11 col-sm-10 thin-header-text">Pitches</div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pitches Section -->
+    <section id="pitches">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Deriving Actionable Insights From Wearable Biosensors Data
+                        </div>
+                        <div class="text">
+                            Companies like Fitbit are making bio-sensing ubiquitous. Activity, Heart Rate, Temperature, Breathing...the list of parameters we can measure is growing continuously. How can these new capabilities help with care delivery? Specifically, where and how can we combine biosensors and A.I. to enhance health experiences?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Pallav Sharda
+                            </span>-
+                            <a class="email" target="_blank">
+                                pallavsharda@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="wearables, sensors, AI, monitoring"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Behavior Design to Incentivize Sleep
+                        </div>
+                        <div class="text">
+                            Sleep deprivation is a major public health issue. It's been linked to increased risks of diabetes, heart attack, stroke, cancer, obesity, and Alzheimer's; and drowsy driving causes up to 6,000 fatal car crashes a year. In the U.S., 42% of adults get less than 7 hours of sleep a night. While there are many causes of sleep deprivation, often it's a matter of willpower – we know we need to sleep, but we prioritize other activities instead. This saps both productivity and health. However, creative behavior design can solve this problem. Social accountability and timely reminders can help us resist the temptations of screen time to prioritize what we really need – a good night's sleep.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Danielle Marshak
+                            </span>-
+                            <a class="email" target="_blank">
+                                dmarshak@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="sleep, behavior design, app, software, preventive medicine"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Developing a tool to screen for crossed eyes in underserved children to prevent permanent vision loss
+                        </div>
+                        <div class="text">
+                            Amblyopia (or lazy eye) is the most common cause of irreversible vision loss in children, affecting 1.5-3.1% of all children. Vision loss leads to lower quality of life, and worse education and future income. There are several causes of amblyopia, including strabismus (or misaligned eyes), which affects 2.8-5.9% of children. Furthermore, we know from a recent study out of the University of Michigan that even among children with insurance, children from a family with a net income of < $25,000 a year have a 16% less chance of seeing an eye doctor than those making $150,000 - $250,000 a year, and a 20% less chance of being diagnosed with strabismus; even though we know the incidence is higher in poorer children. Undetected strabismus or delayed diagnosis will lead to permanent vision loss, which disproportionately affects poorer children. While there is ample work in allowing parents and primary care doctors to do vision screening in young children, there is little similar effort for simple diagnostic tools for strabismus. We need an automated tool to allow for early detection of strabismus at home, school, or in the pediatrician's office to reach this underserved population.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Zachary Elkin
+                            </span>-
+                            <a class="email" target="_blank">
+                                zelkin@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="vision screening, childhood blindness, preventative vision loss, amblyopia, strabismus"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Personalized sleep optimization
+                        </div>
+                        <div class="text">
+                            More than 60 million people in the United States alone suffer from insomnia and 80 million have insufficient sleep. Bad sleep leads to more than just a diminished quality of life - sleep loss leads to significant health risks, decreased performance at work and school, and an increased rate of accidents. The causes of bad sleep are a mystery. The gold standard laboratory assessment of sleep is cumbersome, expensive, and isn't useful for determining the causes of most forms of bad sleep. Recent advancements in sleep science, machine learning, and wearable sensors now afford us the opportunity to accurately gauge the causes of sleep disruption. A low cost solution for accurate, personalized assessment of sleep and the causes of its disruption would radically change the manner in which sleep problems are treated and have an indelible societal impact.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Jamie Zeitzer
+                            </span>-
+                            <a class="email" target="_blank">
+                                jzeitzer@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="sleep, performance, insomnia, quality of life"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            A Novel Blood Testing Platform for the Early Stage Detection of Ovarian Cancer and a Wide Variety of Other Life Threatening Diseases
+                        </div>
+                        <div class="text">
+                            Ovarian cancer is a devastating disease with approximately 250,000 new diagnoses per year worldwide. The five-year survival rate for stage IV ovarian tumors is a mere 35%, which is primarily due to the lack of a simple, rapid, non-invasive test for routine screening. If detected during stage I, the five-year survival rate jumps to 99%. We need a new non-invasive test for detecting ovarian cancer in its early stages, when survival rates are highest. An ideal solution would be easily transferrable to other life threatening diseases that would also benefit from early detection.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Demetri Samuel Maxim
+                            </span>-
+                            <a class="email" target="_blank">
+                                dmaxim@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="ovarian cancer, diagnostics, blood testing"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            The need to make food transportation more efficient to help solve problems associated with food insecurity and food waste
+                        </div>
+                        <div class="text">
+                            The US faces huge problems with individuals not having enough to eat and dying of starvation, as well as excessive food waste which results in produce ending up in landfills and creating noxious gases that pollute our atmosphere. How can we use our current transportation system to bridge that gap?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Vaiva Snapkauskaite
+                            </span>-
+                            <a class="email" target="_blank">
+                                vaivas@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="food insecurity, farming, healthy eating, transportation"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Decreasing costs and improving outcomes for Comprehensive Joint Replacement procedures in light of bundled payments from CMS
+                        </div>
+                        <div class="text">
+                            The Centers for Medicare and Medicaid Services (CMS) are moving to bundled payments to reimburse hospital organizations for complex procedures, starting with comprehensive knee and hip replacements (CJR). These procedures are common but still complicated and require multiple visits with the patient and multiple clinicians and specialties are involved. Organizations are struggling to address a fixed fee reimbursement for procedures they used to have many separate charges for, and could increase charges for more complex/difficult patients. With bundled payments all patients are reimbursed the same by CMS, and furthermore, hospitals are penalized for readmissions as they are not reimbursed for the additional costs. How can identify and capitalize on opportunities to streamline clinical processes, identify risks, and optimize outcomes?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Robert Henehan
+                            </span>-
+                            <a class="email" target="_blank">
+                                rhenehan@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Medicare, CMS, Comprehensive Joint Replacement (CJR), Bundled Payments, Hospital Procedures, Orthopedics, Physical Therapy, Occupational Therapy, Reimbursement, Fixed Fee, Electronic Health Records"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            We need to the ability to measure and improve health outcomes using electronic patient education tools
+                        </div>
+                        <div class="text">
+                            Patients are often the most underutilized caregivers in our healthcare system. We need to find ways to empower patients to help care for themselves by providing the necessary education and tracking tools to improve their own health. Patient education is an often overlooked tool in our healthcare system that can improve outcomes cost effectively. Hospitals and clinics spend significant amounts of money on content and distribution of patient education materials but do not have efficient ways to assess the effectiveness of the education, or if it was even used or understood. Patient education is often addressed during the patients admission (when they are most incapacitated), or right before discharge (when all they want to do is go home), and there aren't many effective tools to follow up and ensure patients are educated appropriately. Many of these tools are simply to meet the requirement that education was provided to the patient, not actually ensure the patient actually understood the material, or reviewed it ever again. There is a significant opportunity to make better health more affordable simply by educating people more effectively. How can we use technology to distribute, monitor and improve patient education content, delivery and related outcomes?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Robert Henehan
+                            </span>-
+                            <a class="email" target="_blank">
+                                rhenehan@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Patient Education, Patient Activation, Caregiver Education, Outcome Measurement, Electronic Health Records, cEHR, Technology, Reporting, Patient Access, Advancing Care Information"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            We need to the ability to measure and improve health outcomes using electronic patient education tools
+                        </div>
+                        <div class="text">
+                            Patients are often the most underutilized caregivers in our healthcare system. We need to find ways to empower patients to help care for themselves by providing the necessary education and tracking tools to improve their own health. Patient education is an often overlooked tool in our healthcare system that can improve outcomes cost effectively. Hospitals and clinics spend significant amounts of money on content and distribution of patient education materials but do not have efficient ways to assess the effectiveness of the education, or if it was even used or understood. Patient education is often addressed during the patients admission (when they are most incapacitated), or right before discharge (when all they want to do is go home), and there aren't many effective tools to follow up and ensure patients are educated appropriately. Many of these tools are simply to meet the requirement that education was provided to the patient, not actually ensure the patient actually understood the material, or reviewed it ever again. There is a significant opportunity to make better health more affordable simply by educating people more effectively. How can we use technology to distribute, monitor and improve patient education content, delivery and related outcomes?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Robert Henehan
+                            </span>-
+                            <a class="email" target="_blank">
+                                rhenehan@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Patient Education, Patient Activation, Caregiver Education, Outcome Measurement, Electronic Health Records, cEHR, Technology, Reporting, Patient Access, Advancing Care Information"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Digitizing health records in resource poor settings
+                        </div>
+                        <div class="text">
+                            There is a need to digitize the collection of data in healthcare systems. In many community hospitals in the United States, and in developing and underdeveloped regions of the world, annotation of data is done by hand and kept in a manila folder. I would like to change that. Data are increasingly valuable for proper interpretation, management, and treatment of disease.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Manuel Rivas
+                            </span>-
+                            <a class="email" target="_blank">
+                                mrivas@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="health records, voice recognition, mobile apps, text recognition, genomics, integrated health records"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Help physicians work better - "What did we do when we last saw patients like this?"
+                        </div>
+                        <div class="text">
+                            Physicians make decisions for their patients by combining the individual patient information with the evidence-based care process that they recall from their education and experience. This process varies today between clinics and physician experience. 
+ 
+Patients are frustrated that they have to provide similar medical history repeatedly (to the receptionist, next to resident and then again to the specialist). Physicians are spending valuable time looking for case records and trying to recall how they managed a similar patient when they last saw such cases. Administrators are trying to standardize outcomes for patients with similar inputs.
+ 
+Design open-source business model and solution* to tackle the problem of “the last few times we have seen patients of this kind, we did …” leveraging connections between patient medical history, diagnostic procedures (e.g. vitals, imaging), treatments (medications, interventions) and NLP mining of conversations between patient and care providers. For example, show a list of similar patients (patient medical history) and their outcomes (surgical outcomes vs. medication-based treatment outcomes).  
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Anupam Dattamajumdar
+                            </span>-
+                            <a class="email" target="_blank">
+                                Anupam.K.Dattamajumdar@ge.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="health records, voice recognition, mobile apps, text recognition, genomics, integrated health records"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            A way to help individuals who may have experienced sexual violence distinguish intolerable behavior, regain confidence, and become proactive in his or her recovery
+                        </div>
+                        <div class="text">
+                            1 in 5 women and 1 in 16 men are sexually assaulted while in college, and more than 90% of sexual assault victims on college campuses do not report the assault, making rape the most under-reported crime. Nevertheless, report of a crime is not a sufficient metric for survivor empowerment. In order to become validated in his or her experiences, an individual must first recognize that unwanted or inexcusable behavior had occurred. Recognition is not simple, as many people are unable to properly classify the nature of their sexual encounters as consensual or as assault. This internal confusion is due to several factors, such as: normalized peer behaviors in college environments, social stigma/embarrassment, and lack of clear memory of the event due to alcohol or drugs. These factors prevent the individual from coming to terms with the reality of what may have happened to them, and it could be several years before he or she has begun to seek resources necessary to begin the healing process. Avoidance of situations may be natural, but continuing to hold a powerless or “victim” mentality has detrimental effects of stunting a survivor’s road to recovery and exacerbates the pervasiveness of rape culture. Though many resources exist, the individual is very unlikely to seek social, medical, or legal assistance when he/she is unable to recognize on their own that they have experienced a form of sexual violence. Furthermore, responsibility of screening for sexual assaults is often left to a medical provider or counselor, which takes additional initiative to set up an appointment. Thus there is a need for individuals who may have had an unwanted sexual encounter to have access to a simple, timely, and discrete way to screen themselves for abnormal physical and psychological states, empowering them with knowledge to make informed next steps if so desired. Ultimately, this system can serve as educational feedback to redefine healthy and unhealthy behaviors, key to undermining our current rape culture.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Ariane Tom
+                            </span>-
+                            <a class="email" target="_blank">
+                                arianectom@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="sexual assault, community engagement, diagnostics, social impact"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Deep Triaging for the 21st century
+                        </div>
+                        <div class="text">
+                            "Triaging is an especially crucial component of the clinical workflow. Imagine implementing a 'custom sort' function on people seeking medical attention to optimize outcomes. Like all great challenges of humanity, 'much easier said than done'. 
+ 
+ The existing human triaging processes only address the tip of the iceberg. With where machine learning technology is today, combined with advances in clinical documentation and data-sharing, it is possible to create an electronic, conversational triaging system that can far surpass - both in scope and scale, the existing manual processes employed currently, while significantly reducing costs at the same time, improving outcomes."
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Krishna Kumar
+                            </span>-
+                            <a class="email" target="_blank">
+                                kkumar@live.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="triage, triaging, deep learning, machine learning, mobile health, conversational, messaging, affordable, efficient"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            An inexpensive, early diagnostic tool for COPD
+                        </div>
+                        <div class="text">
+                            Chronic Obstructive pulmonary disease (COPD) is the third leading cause of death in the world, and it is exponentially increasing due to pollution and smoking. While education on its causes are lacking in the global context, a more pressing issue is the fact that approximately 50% of those expected to have COPD are undiagnosed. This is due to many factors, but a significant reason is because COPD can be asymptomatic until its latest stages of progression. Further, the only current diagnostic tool is an expensive, inaccurate, and unreliable, limited access device called a spiromter. We need to develop a low cost, biologically based diagnostic tool to diagnose at risk patients sooner, provide them with more treatment options to hopefully improve their quality of life, and be accessible to those all over the world.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Sara Kianian
+                            </span>-
+                            <a class="email" target="_blank">
+                                sara.kianian@berkeley.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="chronic disease, COPD, pulmonary health, global health, lab on a chip, diagnostics"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Reduction of Maternal mortality through the integration of Traditional Birth Attendants into existing health systems
+                        </div>
+                        <div class="text">
+                            In 2015 there were approximately 830 daily maternal deaths worldwide. Sub Saharan Africa accounted for about 550 of those daily deaths. A part of the reason why maternal deaths are so high in Sub Saharan Africa is the lack of access to skilled health care. In the rural areas of many sub saharan countries, Traditional Birth Attendants (TBAs) are the only available option to women in labor. In a significant percentage of other cases, TBAs are the preferred choice for rural women even when skilled care is available. The integration of TBAs into existing health systems especially in Sub Saharan Africa could have great positive impact on reducing worldwide maternal mortality by improving the standard of care during deliveries. this integration would also solve health-worker shortage problems through task shifting. Our challenge is to create a functional, sustainable and replicable model that will train TBAs to successfully manage normal deliveries, identify complicated deliveries, stabilize complex cases and refer women when indicated.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Joel Igu
+                            </span>-
+                            <a class="email" target="_blank">
+                                drigujoel@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Maternal Mortality, Task shifting, Traditional Birth Attendants, Misoprostol, Sub Saharan Africa, neonatal health, maternal health"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            We need a way to help consumers in Kenya better find and access a qualified healthcare provider.
+                        </div>
+                        <div class="text">
+Most people in Kenya access their general outpatient healthcare needs through pharmacists (called ‘chemists’ in Kenya). The health professionals working at these chemists serve effectively as the primary care providers for the Kenyan healthcare system. Pharmacies are poorly regulated, and it is very easy to get medications over the counter without a prescription.
+ 
+ While this makes accessing medications relatively easy, the dispensing provider is often underqualified and makes medical decisions without adequate training. It is no surprise then, that we find misdiagnoses, late presentation, poor outcomes, and overly burdened costs of care in Kenya.
+ 
+ What we’ve observed from consumers, however, is that most Kenyans are completely aware that the medical advice they receive is substandard. But in absence of a way to find the right doctor, know where to go, and then access them, the prevailing perception seems to be that there’s no viable alternative to these chemists to take care of their primary care needs.
+ 
+ We need a way to help consumers in Kenya better find and access a qualified healthcare provider. While our need comes from our observations as global health professionals working in Kenya, we believe this is a common problem across many developing countries.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Peter Park
+                            </span>-
+                            <a class="email" target="_blank">
+                                ppark@connecthealth.io
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="health access, mobile health, global health"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Ready to Receive
+                        </div>
+                        <div class="text">
+                            Responsible transfer of patients from hospital to hospital:
+ 
+ It is 9 in the morning and you are the primary physician for 20 patients at a large academic hospital, and you have just accepted another transferring patient from a community hospital. The details the transferring physician provides are vague, but it is clear the patient requires a higher acuity of care, and you agree to the transfer. Six hours later, the patient arrives at your facility with minimal documentation. What medications were they on? What lab work and imaging studies did they have? These are the questions racing through your head as you are frantically digging through the packet of papers transferred with your patient which fail to provide such crucial information. You call the transferring physician at the community hospital, but they have already left for the day. At a loss, you re-order a full set of labs and a CT scan of the abdomen and pelvis, knowing that your workup is redundant, but that you are still responsible for caring for your patient.
+ 
+ This is a common scenario that many physicians are faced with, especially those who work at large tertiary referral centers. We need a user-friendly application for responsible patient transfer, to increase efficient usage of time, and to reduce duplicate testing. There is a standard set of information we need from the transferring hospital- a discharge summary, lab work and imaging, and a current list of medications. Duplicate testing alone is responsible for wasting $20B per year and if the accepting hospital could have access to that information before the patient arrives, then we will be ready to receive the patient and to provide more streamlined and timely healthcare.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Jenny Pan
+                            </span>-
+                            <a class="email" target="_blank">
+                                jennypan@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="application, app, mobile health, domestic, EMR, electronic medical records, health information system"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            We need a way to lessen the high-stress culture of high school in order to help teens at highly competitive schools improve their wellness.
+                        </div>
+                        <div class="text">
+Stress is mounting in our high schools. Teens have to deal with the pressure to succeed and the fear of failure, all with their parents’ hopes and their social status in the balance. Many look at the college application process as if it were a verdict on the first 18 years of their life! Over 30% of teens report feeling sad or depressed as a result of their stress. All this pressure can lead to debilitating mental illnesses, and in young people who should have so much to look forward to. We need to help these teens’ mental health and help them set healthy trends they can maintain the rest of their lives. We need a way to lessen the high-stress culture of high school in order to help teens at competitive schools improve their mental health. If you want to change this, talk to me!
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Alice Stanton
+                            </span>-
+                            <a class="email" target="_blank">
+                                stantona@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="teen, mental health, wellness, stress, pressure, pediatric"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Increasing The Affordability of Autism Therapy
+                        </div>
+                        <div class="text">
+                            The CDC reports that 1 in 65 children in the U.S. are born with autism. The most common treatment for children with autism - Applied Behavior Analysis (ABA) - can require up to 30+ hours of treatment per week. As more insurance companies are encouraged to cover these services, they are incurring incredibly high costs. ABA is a data-driven therapy, and the industry stands to benefit from a way to use this data to inform insurance companies of the treatment centers that are being most effective. This could help cut costs and reward the centers that are providing the best treatment.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Mark Cassidy
+                            </span>-
+                            <a class="email" target="_blank">
+                                cassidy1@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags=""></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Clinical and engineering talent that want to tackle Medicare Part D (1% GDP by 2030)
+                        </div>
+                        <div class="text">
+                            Only 12% of seniors are in the least expensive Medicare Part D Plan, often leading to seniors not taking their drugs because of costs. At the same time, Medicare is moving moving towards Value Based Payments that pay providers based on outcomes strongly linked to prescription adherence, reducing cost of care, and improved formulary management. Medicare Part D spending is projected to increase to 18% of all Medicare costs by 2025. By 2030, Part D alone will cost taxpayers 1 percent of GDP. The growth in this population, spending, and need for innovation motivates us to work on this topic.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Harlyn Pacheco
+                            </span>-
+                            <a class="email" target="_blank">
+                                harlyn@gofishrx.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Medicare, Prescriptions, Formulary, Adherence, Costs, Drugs, Seniors"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Dancing reduces the risk of dementia by 76%, helps prevent falls, combats aging, cancer, heart disease, chronic pain, diabetes, and neurological disorders, elders/patients often homebound, isolated and depressed, there is an unmet need for tele-exercise platform for home care.
+                        </div>
+                        <div class="text">
+                            APA reported 77% of Americans has physical symptoms due to stress, and 73% psychological. 60-90% of doctor visits are due to stress. Work stress cost $300 billion to employers annually. Patients, elders and caregivers suffer from physical fatigue and severe stress. They are often homebound due to compromised immune systems, isolated and lonely, triggers anxiety and depression. Stress also fuels cancer spread by triggering the master gene ATF3. Behavior change is the toughest challenge in healthcare. Research shows Creative Arts Therapy (music, dance, art) can be one of the most effecive tool to combat stress. It improves cancer patients’ quality of life by 50%, reduces pain by 59%. Moderate exercise makes cancer treatment more effective. ⅓ of Americans are >50 now, ⅕ will be >65 in 2030. Alzheimer’s accounts for ⅕ of Medicare costs in 2015, and will be ⅓ by 2050. Dancing reduces the risk of dementia by 76%, helps prevent falls, combats aging, heart disease, chronic pain, diabetes, and neurological disorders. All of which costs the U.S. $1.8 trillion. Dancing will greatly reduce $400 billion economic cost in eldercare in the US, and help governments over the world prevent the economic downfall caused by aging. Yet music and dance are underutilized in healthcare. The U.S. Government and health systems have an urgent need to reduce medical costs. The Obama administration’s overhaul of doctors fees is tied closely to quality, rather than quantity, of care. We need a way to raise awareness of these medical research behind health benefit of creative arts therapy. There is also an unmet need for an effective, low-cost technology platform to enable patients and elders to dance with caregivers, other patients, friends and families remotely for home-care.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Amy Li
+                            </span>-
+                            <a class="email" target="_blank">
+                                meidesign.net@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="aging, eldercare, cancer, heart disease, chronic pain, dance, music, art, exercise, telehealth, home care, homebound, depression, isolation, loneliness, anxiety, community, social connections, independence"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Capturing critical blood pressure diagnostics
+                        </div>
+                        <div class="text">
+                            Hypertension is a ubiquitous problem and a leading cause of blindness, stroke, kidney failure and cardiovascular morbidity. Early identification is essential to preserving organ function and saving lives. Current diagnostics are limited by well described phenomenon of "white coat hypertension" and "masked hypertension", as well as diurnal fluctuations in blood pressure. The gold standard, continuous ambulatory blood pressure monitoring for 72-hours, is more accurate in predicting clinical outcomes and capturing patients with masked or nocturnal hypertension who would otherwise be missed by isolated office-based screening. However, ambulatory blood pressure monitoring is inconvenient for patients, expensive, and rarely accessible, with only 3 devices available at Stanford. Practitioners are left with few, inherently flawed data points upon which to diagnose and treat. While home blood pressure cuffs are more readily accessible, there is no universal mechanism for communicating these values to providers or incorporating them into the medical chart. This is in contrast to home glucose readings, for which Stanford has created a mechanism for uploading to Epic in order to improve treatment decisions and patient outcomes. I would like to pitch a smart phone app that uses the phone camera to take snapshots of home blood pressure cuff readings, effectively turning any cuff into a digital health tracker mimicking ambulatory home monitoring. Ideally this data would sync with Epic's MyHealth to make standard of care diagnostics and treatment assessment available to patients regardless of resources. This, in turn, prevent both over- and under-treatment, while reducing the annual burden of hypertension-induced stroke, retinopathy, renal failure, dementia, peripheral vascular disease, and heart failure.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Rebecca Boyle
+                            </span>-
+                            <a class="email" target="_blank">
+                                rboyle@stanfordhealthcare.org
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Hypertension, blood pressure, mobile health, diagnostics, treatment efficacy, mortality, prevention, data capture"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Improving patient centered, provider communication
+                        </div>
+                        <div class="text">
+                            Inefficient patient centered, provider to provider communication. Replace pagers, texts, email, voice mails, etc with a real time communication platform later copied like a ”chat” to the EMR
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Frederick Dirbas
+                            </span>-
+                            <a class="email" target="_blank">
+                                Dirbas@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Efficiency cost savings, mobile health"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            MACRA Strategy and MIPS Electronic Submissions
+                        </div>
+                        <div class="text">
+                            It is going to cost healthcare providers across the US an estimated $200 billion annually just to comply with MIPS and MACRA electronic submissions and data registries. There is a need and opportunity to find more cost effective compliance methods for hospital systems as well as to help them improve their scores and reimbursements under the new healthcare laws. MACRA = Medicare Access and CHIP Reauthorization Act, $200 billion market calculation from MACRA final rule Tables 45 and 46.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Robert Henehan
+                            </span>-
+                            <a class="email" target="_blank">
+                                rhenehan@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="meaningful use, pqrs, mips, macra, medicare, medicaid, affordability, value based purchasing, vale based reimbursement, value based care, qualifying participants"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Corporate Onsite Clinics--Avoiding the pitfalls of convenience
+                        </div>
+                        <div class="text">
+                            In recent years, on-site corporate medical clinics have emerged as a means of trying to reduce healthcare costs, to increase the uptake of preventive services, and to improve access to healthcare services for employees. However, in many cases, the presence of these clinics have increased healthcare utilization and costs somewhat unexpectedly from visits and services for conditions that might not otherwise require medical attention (e.g. a stomach ache for an hour, cold symptoms for a day, blemishes on skin, simple stys, paronychia, etc.). In addition, due to employee disgruntlement, copays have often been removed, facilitating an increasing number of these types of low-value/high-cost visits.
+ Can we design an online triage tool that is connected with these clinics to help patients better understand and manage such conditions on their own before opting for a clinic visit that often results in similar self management recommendations (and one that helps patients determine if they do in fact have a more serious condition that warrants clinical evaluation)?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Sue Kim
+                            </span>-
+                            <a class="email" target="_blank">
+                                suekim37@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="corporate healthcare, onsite clinics and cost efficiency, online triage"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Improving access and affordability for Integrative Medicine
+                        </div>
+                        <div class="text">
+                            Currently, modalities such as acupuncture, chiropractic, massage, naturopathic therapy, etc. are delivered mainly outside of the conventional healthcare paradigm, without any coordination with Western medicine providers and paid for mostly out-of-pocket. There is a potential for many of these services to alleviate burden both from a financial standpoint as well as in terms of the healthcare provider shortage if used appropriately. However, in the present landscape, these therapies are limited to those who can afford it or the few with accessory insurance coverage (of chiropractic/acupuncture). In addition, there is often minimal coordination of care between practitioners of these complementary practices and healthcare providers, resulting in disjointed care. 
+ 
+ Using non-specific back pain as an example, is there a way to change the care paradigm to include these modalities in a structured way (if the patient expresses interest) that facilitates collaboration, coordination of care, and affordability for those who cannot typically afford these services?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Sue Kim
+                            </span>-
+                            <a class="email" target="_blank">
+                                suekim37@gmail.com
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="Integrative Medicine, acupuncture, chiropractic, coordination of care"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Affordable Electrical Stimulator to help people suffering from foot drop
+                        </div>
+                        <div class="text">
+                            Accessibility to useful foot drop technology (common for people with MS) is extremely low due to the high price tag on the available systems. Healthcare does not usually cover the better products in their entirety, leaving thousands in the dust. I believe it is possible (and essential) to a create cheaper, accessible, and more advanced foot drop system.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Pierluigi Mantovani
+                            </span>-
+                            <a class="email" target="_blank">
+                                piermantovani@berkeley.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="electrical stimulation, foot drop, affordable healthtech, multiple sclerosis, prosthetics, neuroprosthesis, prosthetic"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Scalable/Viral Global Health Donation Platform for Silicon Valley
+                        </div>
+                        <div class="text">
+                            Health-focused charities are typically the most effective aid interventions--such as parasitic deworming, combating malaria, and addressing micronutrient deficiencies. However, the majority (58%) of young people (16-24yo) contribute nothing to a cause in a typical month and Democratic states/cities such as California or San Francisco rank low when it comes to charity.
+ 
+ Movements such as Effective Altruism or Giving What We Can https://www.givingwhatwecan.org/get-involved/join/ ask professionals to give 10% and students to give 1% and yet this movement is not mainstream within Silicon Valley.
+ 
+ How can we reduce barriers to entry when it comes to Silicon Valley / national giving? Whether by introducing cause or NGO investment portfolios or discovering some new distribution hack, there is a real need to nudge Stanford and Silicon Valley to give back to global health.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Leslie Wu
+                            </span>-
+                            <a class="email" target="_blank">
+                                lwu2@cs.stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="malaria, donation, silicon valley, NGO, mental health, micronutrient deficiency"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Demystifying patient-doctor and family-doctor communications
+                        </div>
+                        <div class="text">
+                            One huge issue in the delivery of healthcare is miscommunication between patients and families, often resulting from the frequent use of technical terms that lay-people have difficulty understanding. How can we work to improve the communication interface, clarifying what patients and their families understand and, conversely, do not understand?
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Yagmur Muftuoglu
+                            </span>-
+                            <a class="email" target="_blank">
+                                yagmur@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="communication, terminology, patient satisfaction"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">
+                            <span class="number"></span>
+                            Saving lives with SMS technology
+                        </div>
+                        <div class="text">
+                            Imagine your life was that of a nurse midwife. You live in a rural village; an impoverished area. You arrive at a neighboring village to provide care to the pregnant women and their young children. You are devastated to learn just two days prior, a mother and her unborn child lost their lives unnecessarily. You pull out your notebook to document the deaths, then send a text message to your health care center to share relay the news. It then strikes you. Could this phone, with basic SMS technology, be used as the life line between healthcare workers and local caretakers to provide just-in-time education to prevent such deaths? How might this technology be developed to provide targeted health education with minimal cost to millions of mothers and children in need? We ask you to join our team to explore and prototype possible interactive mobile communication and content delivery solutions through iterative design and testing.
+                        </div>
+                        <div class="pitcher-info">
+                            <span class="name">
+                                Kim Walker
+                            </span>-
+                            <a class="email" target="_blank">
+                                kwalker5@stanford.edu
+                            </a>
+                        </div>
+                        <div class="tags" data-tags="SMS, mobile content delivery, patient communication, patient education, global, rural communities"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" style="background-color: #000">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text center">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="mailto:healthplusplus-team@lists.stanford.edu"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://www.facebook.com/stanfordhealthplusplus"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/healthplusplus"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/pitches.js"></script>
+
+</body>
+
+</html>
