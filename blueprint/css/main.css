@@ -244,10 +244,13 @@ header {
   align-items: center;
   background-color: #F5634A;
   background : -webkit-linear-gradient(#AB3F54, #98FCD3, #D9B452);
-  /*background: -webkit-linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
-  background: -moz-linear-gradient(#ED2F3B, #F5634A, #FB9C60);
+  background: -webkit-linear-gradient(#ED2F3B, #F5634A, #FB9C60);
+  /*backround : -moz-linear-gradient(#AAE6F3, #C7EBFF);*/
+  /*background: -moz-linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
   /*background: linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
   /*background : linear-gradient(#AB3F54, #D5634D, #FB6C40);*/
+  background : -moz-linear-gradient(#AAE6F3, #C7EBFF);
+
   background : linear-gradient(#ef5b54, #f29160);
 
   color: white;
@@ -267,7 +270,7 @@ header .intro-text .logo {
   border-radius: 5px;
 }
 header .intro-text .intro-heading {
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 100;
   letter-spacing: -3px;
   line-height: 1em;
@@ -279,10 +282,11 @@ header .intro-text .intro-heading .bold {
 header .intro-text .intro-lead-in {
   font-size: 32px;
   line-height: 1.3em;
+  margin: 3px 0;
 }
 header .intro-text .location {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 32px;
   line-height: 1.4em;
 }
 header .apply {
@@ -467,9 +471,11 @@ section h3.section-subheading {
   align-items: center;
   background-color: #F5634A;
   /*background: -webkit-linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
-  background : -webkit-linear-gradient(#AB3F54, #98FCD3, #D9B452);
- 
-  background: -moz-linear-gradient(#ED2F3B, #F5634A, #FB9C60);
+  /*background : -webkit-linear-gradient(#AB3F54, #98FCD3, #D9B452);*/
+  background: : -webkit-linear-gradient(#AAE6F3, #C7EBFF);
+  background : -moz-linear-gradient(#AAE6F3, #C7EBFF);
+
+  /*background: -moz-linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
   /*background: linear-gradient(#ED2F3B, #F5634A, #FB9C60);*/
   /*background : linear-gradient(#AB3F54, #D5634D, #FB6C40);*/
   background : linear-gradient(#ef5b54, #f29160);
