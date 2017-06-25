@@ -1,0 +1,39 @@
+#title {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  font-size: 250%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*body {
+  background-color:  #ffb3b3;
+}*/
+
+#shift_logo {
+  float: right;
+  margin-top: -2%;
+}
+
+#scroll_button {
+  padding-left: 40%;
+}
+
+#speakers {
+  height: 100vh;
+  background-color: #ff4d4d;
+}
+
+#speakers, #contact {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color:  #ff6666;
+}
+
+h2 {
+  color: #ff1a1a;
+  font-family: 'Montserrat', sans-serif;
+}
