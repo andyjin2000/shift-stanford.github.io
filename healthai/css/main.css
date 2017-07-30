@@ -6,26 +6,34 @@
   margin-right: 10%;
 }
 
-/*body {
-  background-color:  #ffb3b3;
-}*/
-
 #shift_logo {
   float: right;
   margin-top: -2%;
 }
 
-#scroll_button {
-  padding-left: 40%;
-}
-
 #speakers {
-  height: 100vh;
-  background-color: #ff4d4d;
+  height: 100%;
+  background-color: #ffcccc;
+  font-family: 'Lato', sans-serif;
 }
 
-#speakers, #contact {
-  text-align: center;
+#speakers p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 125%;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+li {
+  margin: 1em 0;
 }
 
 h1 {
@@ -40,4 +48,15 @@ h2 {
 
 h4 {
   margin: 0;
+}
+
+#speakers h1 {
+  text-align: center;
+  color: #660000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+span {
+  color: #b30000;
+  font-size: 75%;
 }
