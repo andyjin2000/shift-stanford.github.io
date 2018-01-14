@@ -37,12 +37,13 @@ section:nth-child(even) {
 section h1 {
   color: #800000;
   font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+  font-size: 6vh;
   text-align: center;
 }
 section p {
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 3vh;
 }
 #title {
   font-family: 'Lato', sans-serif;
@@ -63,4 +64,21 @@ section p {
 }
 .date {
   color:  #660000;
+}
+
+.items {
+  overflow: hidden; /* simple clearfix */
+}
+
+.items .item {
+  float: left;
+  text-align: center;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
 }
