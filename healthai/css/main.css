@@ -32,12 +32,10 @@ h4 {
 span {
   color: #b30000;
 }
-
 .speaker-name {
   color: black;
   font-size: 150%;
 }
-
 section {
   padding: 40px 10%;
 }
@@ -54,6 +52,10 @@ section p {
   margin-left: 5%;
   margin-right: 5%;
   font-size: 3vh;
+}
+img {
+  height: 200px;
+  width: 200px;
 }
 #title {
   font-family: 'Lato', sans-serif;
@@ -108,7 +110,3 @@ section p {
   padding: 10px;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-}
