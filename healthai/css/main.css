@@ -26,8 +26,13 @@ h4 {
 }
 span {
   color: #b30000;
-  font-size: 75%;
 }
+
+.speaker-name {
+  color: black;
+  font-size: 150%;
+}
+
 section {
   padding: 40px 10%;
 }
@@ -66,14 +71,34 @@ section p {
   color:  #660000;
 }
 
-.items {
+.organizer-items {
   overflow: hidden; /* simple clearfix */
 }
 
-.items .item {
+.organizer-items .item {
   float: left;
   text-align: center;
   width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.speaker-item {
+  overflow: hidden; /* simple clearfix */
+}
+
+.speaker-item .item-left {
+  text-align: left;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.speaker-item .item-right {
+  text-align: right;
+  float: left;
+  width: 50%;
   box-sizing: border-box;
   padding: 10px;
 }
