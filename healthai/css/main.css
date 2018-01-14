@@ -10,6 +10,11 @@ a {
 a:visited {
   color: black;
 }
+
+.notes, .notes:visited {
+  color: green;
+}
+
 li {
   margin: 1em 0;
 }
@@ -68,7 +73,7 @@ section p {
   height: 100%;
 }
 .date {
-  color:  #660000;
+  color: #660000;
 }
 
 .organizer-items {
