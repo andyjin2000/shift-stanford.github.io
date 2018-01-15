@@ -10,7 +10,7 @@ a {
 a:visited {
   color: black;
 }
-#subscribe a {
+#subscribe a, #subscribe a:visited {
   color: blue;
 }
 .notes, .notes:visited {
