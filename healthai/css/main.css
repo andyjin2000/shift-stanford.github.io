@@ -10,7 +10,9 @@ a {
 a:visited {
   color: black;
 }
-
+#subscribe a {
+  color: blue;
+}
 .notes, .notes:visited {
   color: green;
 }
