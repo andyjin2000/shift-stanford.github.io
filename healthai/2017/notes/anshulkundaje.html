@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CS 522: Seminar in AI in Healthcare </title>
+  <link rel="shortcut icon" type="image/png" href="../img/SHIFT_favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="../css/notes.css" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112475802-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-112475802-1');
+  </script>
+</head>
+
+<body>
+<header> <h1> <a href="../">CS 522:</a> Anshul Kundaje </h1> </header>
+<div id="notes">
+<p class="speaker" dir="ltr">
+    Professor Anshul Kundaje
+</p>
+<p dir="ltr">
+    Machine Learning Approaches to Decode the Human Genome
+</p>
+<p dir="ltr">
+    <a href="http://anshul.kundaje.net">anshul.kundaje.net</a>
+</p>
+<br/>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            The Human Genome Project
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                In 2003, after 10 years of work, costing about 3 billion
+                dollars, we got a first draft of the genome
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Genome = long string of A, C, T, G nucleotides
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Exact sequence encodes cellular function, identity, etc.
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                ~3 billion nucleotides
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                These letters represent some average kind of genome for
+                mankind.
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Population sequencing to identify disease-associated genetic
+            variants
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Fast forwarding to today, there's been a revolution in genome
+                sequencing technologies.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Sequencing costs dropped from 3 billion dollars to close to
+                1000 dollars in the span of a few years.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Sequencing machines have reduced in size
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Oxford Nanopore technology = fits in your palm; effectively
+                    a USB device
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Live sequences and streams data directly into computer
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        One-time use
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Useful for remote areas
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Number of genomes being sequenced rising faster than
+                    Moore's Law
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Advantage of cheap sequencing:
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Can conduct population sequencing
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                With the consensus human genome, at specific positions of the
+                genome, individuals can differ. This is genetic variance.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Genetic variation is mostly not harmful, just makes us
+                different
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Genome-wide association study: can detect statistically significant
+            associations with disease of interest for individual genomes
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Being heavily used today
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Can identify loci, but not sure how to act on this information
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Not sure what loci does or how loci translates into some
+                    molecule that we could perhaps counteract with a drug or
+                    whatnot
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                This is the area of functional genomics: take large sequence
+                genome databases and annotate what every position in genome
+                does/does not do
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            To answer basic questions in functional genomics, we need to think
+            about the anatomy of the genome.
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                A sequence of a gene encodes a protein. Genes, proteins are
+                building blocks of the cells for it to perform various
+                activities.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                By expressing different proteins at different times, can
+                produce different cells with different function
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Proteins are the workhorses
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Unique expression of proteins defines cell function
+            </p>
+        </li>
+    </ul>
+</ul>
+<br/>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Cell is a complex control system
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Regulate which proteins are expressed by controlling genes
+                (activate/repress)
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Among 3 billion base pairs, ~99% base pairs are non-coding
+                (potentially do something else); only ~1% encode proteins
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Control elements (on/off) are scattered throughout the 99% - we
+                don't know where they are or what they do.
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            How to decide if specific sequence in genome is control element or
+            not?
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                The cell does this with epigenetic modifications; there are a
+                number of proteins that can be attached
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Depends on epigenetic proteins that interact with a loci; can
+                perform sequencing to generate genome-wide profiles of
+                epigenetic modifications
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            There is an epigenetic language/code - beyond A, C, G, T - that
+            dynamically decides what portion of sequence is active or not
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                One genome sequence is identical in all cell types/tissues in
+                body
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                How does one genome encode for so many cell types?
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Each cellular state corresponds to a specific repertoire of
+                    proteins that are expressed expression = specific
+                    combination of epigenetic control elements expressed
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    If you want to decode how a genome encodes function, need
+                    to think about in terms of cell state.
+                </p>
+            </li>
+        </ul>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            NIH created the epigenetic cube; x-axis = 100s of cell
+            types/tissues, y-axis = genomic coordinates (3 billion positions),
+            z-axis = 100s of biochemical measurements
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                This is where machine learning, probabilistic models, and deep
+                learning can help understand this massive amount of data.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                3 questions we ask are:
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    1) Identifying tissue-specific control elements
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    2) Learning sequence code of control elements
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    3) Interpreting disease-associated genetic variation (now
+                    we see a mutation in the human genome, we can predict what
+                    would happen if you broke that sequence)
+                </p>
+            </li>
+        </ul>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            First challenge: cube has massive amount of data; need to reduce to
+            some compressed representation
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                No single biomarker just encodes function.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Evolution is smart; uses combinations of biochemical markers to
+                encode a function
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Combinatorial chromatin states
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                In an unsupervised approach, walk across the genome and
+                identify all combinations that are frequently found
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Hidden Markov Model
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Walk across genome; identify latent/hidden states
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Latent state emits an observed biochemical marker
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Can train giant HMM that runs across all cell types to learn
+                hidden states
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                This HMM captures state transitions and the combinatorial
+                combinations.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Can then compress all the biomarker profiles into a vector of
+                hidden states, and represent genome and any single cell type
+                with one track.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                A comprehensive functional annotation of the human genome
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    ~20,000 genes, we know largely where they are
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We discovered ~2 million novel putative control elements:
+                    only occupy ~8% of genome
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Also discovered cell-types specific usage of elements
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                A very complex control systems enables the complexity of a
+                human.
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    This is how we first started opening up the rest of the
+                    genome and understanding the other 99%.
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We still believe that most of the genome is neural and not
+                    doing anything; hasn't been weeded out through evolution.
+                </p>
+            </li>
+        </ul>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            2 million control elements show highly modular activity defining
+            tissue identity
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                What's defining cell type tissue and identity is intricate
+                activation of elements.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Beautiful mapping of function of genes and what activates them.
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            &gt;95% of complex disease-associated variants are not in genes
+            instead likely disrupting control elements
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Only 4.9% of known disease-associated variants break genes
+                (breaks the coding sequence of genes)
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Remaining 95% of disease-associated variants are outside;
+                likely break control elements
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Question: What cell type is relevant to study for a specific
+            disease?
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Ex: Alzheimer's Disease, neurodegenerative disease, which cell
+                type should you study?
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Neurons perhaps? Neurons degenerate
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We find actually immune cells affect Alzheimer's.
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Take AD variant positions and overlap with cell type
+                    Manhattan plots
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Immune/blood cell types prove most prominent
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Immune cells are responsible for clearing plaques
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        But genetic variants that disrupt immune cells prevent
+                        removal of plaques
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        May cause neurons to die -- exact mechanism is not
+                        known
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Data-driven approach shows that large proportion of
+                    variants that affect AD act through immune elements rather
+                    than neuronal elements
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Supported by mouse model experiments
+                    </p>
+                </li>
+            </ul>
+        </ul>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Learning the DNA regulatory code of the genome
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                What are the DNA words and grammars that define tissue-specific
+                control elements?
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Transcription factors love to bind to DNA sequences with
+                    specific words. The basis of the regulatory code is these
+                    little landing pads for proteins.
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Can we learn from sequences to determine their activation
+                    patterns?
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Supervised machine learning for decoding DNA words in
+                tissue-specific control elements
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Classify a sequence as part of a module/tissue type or not
+                    (is it active?)
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Used neural networks; we don't know a good way of
+                        encoding DNA sequences (people have tried for a while
+                        hand-engineering features)
+                    </p>
+                </li>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Apply an agnostic approach
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Every artificial neuron in a neural network can
+                            encode some sort of DNA word and this neuron can be
+                            activated every time it sees this word. The neurons
+                            are pattern detectors.
+                        </p>
+                    </li>
+                </ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Advantage: do not need to specify features; neurons in
+                        neural network will identify features on its own
+                    </p>
+                </li>
+            </ul>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                We use deep convolutional neural networks since we want to
+                exploit locality across sequences.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Instead of just predicting one activation, we use multi-task
+                deepCNN to jointly predict binding of multiple transcription
+                factors
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                With this approach, we have prediction accuracy of mean auROC
+                of 0.82 and mean auPRC of 0.65.
+            </p>
+        </li>
+    </ul>
+</ul>
+<p dir="ltr">
+    We're getting tissue specific activations of the genome.
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            More interested in features extracted by the neural network rather
+            than predictions
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Learn 1000s of known and novel DNA words defining the
+                regulatory code of tissue-specific control elements
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Next, can we interpret how the same DNA sequence gives rise to
+            dynamic activation of control elements in different cell states?
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Say we have a neural network that predicts activations for
+                various regions. We want to understand why it does that. So we
+                can that recursively backpropagate to individual nucleotides
+                that contribute to the activation.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                DeepLIFT: Kundaje lab.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Different DNA word grammars can activate same control element
+                in different tissues.
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We can see for different cell types, which words are active
+                    and combinatorially define activation.
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    So like natural language, DNA has words and grammars.
+                </p>
+            </li>
+        </ul>
+    </ul>
+</ul>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            How can we use this to understand disease?
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Let's look at coronary heart disease.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                CNNs can predict and interpret effects of disease-associated
+                genetic variants in the relevant tissue context.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                We look at unstimulated coronary smooth muscle cells.
+                Genome-wide association study says a certain C-&gt;T variant is
+                super important. However, the neural network indicates it
+                doesn't matter.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                When we stimulate these cells, the neural network actually
+                finds a certain word - that has the position of the C - that is
+                important.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                So we find that stimulated cells are the ones that are
+                important to target, not unstimulated cells.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Hence, neural networks help us understand what may be important
+                for disease and take action appropriately.
+            </p>
+        </li>
+    </ul>
+</ul>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Future of personalized medicine
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Personal genome sequence + personal functional genomic data +
+                electronic medical records/clinical data/biometrics/literature
+                mining -&gt; domain-specific machine learning + AI -&gt; rapid
+                interpretation of personal genomes + data-driven personal
+                diagnosis (cause rather than symptoms) + drug target
+                identification and design + optimal treatment regimes
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                For example, in cancer, if we can track patients over time
+                (with functional assays), we can better determine how to treat
+                the disease.
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Within a decade, most of the human population will probably be
+                sequenced, leading to many exciting opportunities
+            </p>
+        </li>
+    </ul>
+</ul>
+<br/>

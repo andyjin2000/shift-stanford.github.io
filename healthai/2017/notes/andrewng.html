@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CS 522: Seminar in AI in Healthcare </title>
+  <link rel="shortcut icon" type="image/png" href="../img/SHIFT_favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="../css/notes.css" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112475802-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-112475802-1');
+  </script>
+</head>
+
+<body>
+<header> <h1> <a href="../">CS 522:</a> Andrew Ng, Pranav Rajpurkar, Anand Avati </h1> </header>
+<div id="notes">
+<p class="speaker" dir="ltr">
+    Andrew Ng
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Overview of AI and why it is affecting healthcare
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                AI is the new electricity
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Electrification of country transformed every major industry
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Reached surprisingly clear path for AI to transform
+                    industries just like electricity 100 years ago
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Almost all the value that is created through AI today
+                (economic, etc.) comes from one type - supervised learning
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Supervised learning
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Learn the following mapping: Input A -&gt; Output B
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ex: facial recognition to unlock cell phones
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        A = image, B = is it you?
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ex: targeted advertising
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        A = (ad, user), B = click
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ex: speech recognition
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        A = audio, B = text transcript
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Lots of users, such as when searching -- but only
+                        recently has this been enabled
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ex: automated diagnosis
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        A = radiology image, B = diagnosis
+                    </p>
+                </li>
+            </ul>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Turns out a lot of the value creation the best opportunities is
+                finding the creative ways to implement supervised learning
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Supervised learning has been around for a long time; why is it
+                only now taking off?
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We have much more data now
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    X-axis: amount of data, y-axis: performance
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                With traditional learning algorithms, performance takes a
+                logarithmic curve
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Hence, these algorithms don't take into too much account
+                    the amount of data we have
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    With neural networks, and especially deeper ones, we can
+                    take greater advantage of the data
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                However, you need a lot of data to train these neural networks,
+                and we only recently have this in healthcare
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    The rise of EHR records being publicly available partially
+                    helps fuel this
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Over the last 5 years we went from having a very little
+                    data to a lot of data
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Finally, the other breakthrough was the rise of very large
+                neural networks
+            </p>
+        </li>
+    </ul>
+</ul>
+<p dir="ltr">
+    <img
+        src="https://lh4.googleusercontent.com/rQRNzxsxQRXNiAJCmkAf5P_BNDrulH4taVtLNrehkhEkd9fCm1bN9ZJ499rQ3sOfOaC0ewVeNlnmKYpVZYA0mw3Cf8opo_jsTU0K817K5kDyb6g7ain_iZ7s2OwYt4nHbd9OUF6Q"
+        width="325"
+        height="225"
+    />
+</p>
+<p class="caption" dir="ltr">
+    The rise of larger neural networks has led to higher performance with
+    greater utilization of data
+</p>
+<br/>
+<p class="speaker" dir="ltr">
+    Pranav Rajpurkar
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Arrhythmia Detection
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Arrhythmia = irregular beating of the heart
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Costs a lot to treat
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Affects 100s of millions of people
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Diagnosed with ECG test, which shows heart's electrical
+                    activity over time
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                The problem is many times if we see a small sample of the ECG,
+                some issues may not be noticed
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ideally we want to monitor for longer periods of time
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We now have the devices to do this
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                If we collect data for a 14-day period, this is way too much
+                data for doctors to analyze
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Would want to automate analysis of this data
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Even doctors have a hard time diagnose this
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    There are many components that are part of a ECG waveform,
+                    and the doctor looks at these features
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    There are many rules but programming into a computer is
+                    futile since there's so much variation
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    If we look at the performance of doctors on Atrial
+                    Fibrillation, we see about 70% accuracy
+                </p>
+            </li>
+        </ul>
+    </ul>
+</ul>
+<p dir="ltr">
+    <img
+        src="https://lh6.googleusercontent.com/Owbk6Mt4vtKZQ4XChzZdDnkfZt-rnUd_rwRB-WIzyZ9koqCpHuVCANhQ2G9ou_j-sLXu8e4tw79t_89eOr1TbGcXPvDikjj8wAQ2IgKkOu8-5NTJNNrvGzdzxhFoJf-V0jJpZJAe"
+        width="364"
+        height="227"
+    />
+</p>
+<p class="caption" dir="ltr">
+    Various components of a ECG waveform
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            In the past, machine learning relied on shallow models and little
+            data
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            In this work, we use data from 30,000 unique patients
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            We use a Convolutional Neural Network (CNN): go from A (ECG data)
+            to B (annotated Arrhythmia)
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                In a span of 5 months, we hit human performance
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                And in the 6th month, we beat cardiologists and reached 81%
+                accuracy
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Automation has a lot of impact
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Saves patients cost of misdiagnosis
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Saves doctors time
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Low cost
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Allows for diagnosis of arrhythmia in low-resource settings,
+                where people may not have access to cardiologists
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Could outperform board-certified physicians at Stanford
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            <a href="https://stanfordmlgroup.github.io/projects/ecg/">
+                https://stanfordmlgroup.github.io/projects/ecg/
+            </a>
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            <a href="https://arxiv.org/pdf/1707.01836.pdf">
+                https://arxiv.org/pdf/1707.01836.pdf
+            </a>
+        </p>
+    </li>
+</ul>
+<br/>
+<p class="speaker" dir="ltr">
+    Anand Avati
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Palliative Care
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Providing relief from pain, rather than on curative treatments
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ex: hospice care
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                EHR (electronic health record) + electronic version of
+                patient's health history
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Billing, insurance claims, demographic data, clinical order
+                    data
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Noisy, prone to human error (as humans input the data),
+                    missing data
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Project: Deep Learning to predict whether patient will die in
+                next 3-12 months using EHR data
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Why?
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        80% of Americans prefer to spend final days at home if
+                        possible but only 20% do
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        60% of deaths occur in hospital while receiving
+                        curative treatment
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Why the mismatch?
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Doctors tend to be over-optimistic, work under time
+                        pressure
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Palliative care teams are understaffed; expensive to
+                        proactively chart review all admitted patients for
+                        palliative care needs
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        A big reason is the economic incentives in the
+                        healthcare system
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Goal:
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Improve access to palliative care for patients
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Automatically screen all patients admitted to hospital
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Use deep learning model to make automated prediction
+                        and share with palliative care team
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Trained a model with 18 years of data and 30,000 patients
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Impact
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Offline validation: AUC = 0.94
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Validation in real-world:
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Suggested 50 patients to palliative care; all 50 were
+                        reviewed by palliative care team and verified as
+                        legitimate
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Currently undergoing pilots in Stanford hospital
+                    </p>
+                </li>
+            </ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Hospital board of directors are excited
+                </p>
+            </li>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Increases the quality care of patients
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Morally right thing to do
+                    </p>
+                </li>
+            </ul>
+        </ul>
+    </ul>
+</ul>
+<br/>
+<p class="speaker" dir="ltr">
+    Andrew Ng
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Many industries are undergoing the IT revolution
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Over the last 10 years, what was once stored in a piece of
+                paper are now stored digitally
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Ex: Coursera: keeps a record of educational lectures
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Ex: garment industry: all purchases are stored in a database
+                rather than filing cabinet
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Results in rise of data
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                IT revolution -&gt; Data -&gt; AI revolution
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    The IT revolution is still going on generally
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Healthcare is still undergoing IT revolution
+                </p>
+            </li>
+        </ul>
+    </ul>
+</ul>
+<p dir="ltr">
+    <img
+        src="https://lh3.googleusercontent.com/4fMI3JoHtYV4v8e6F00SsixEQJjZsSsb6b9-au_qC-BESQ783i6bhC2Zu79oUky-dLKjcUAbCDql9Vj0WfIShzpmlRprMjM0flJ0oIBju99qND3yr-tYgSnV1RpmT5GjXxb_SiBZ"
+        width="370"
+        height="187"
+    />
+</p>
+<br/>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Alison Darcy: Woebot
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Epidemic of mental illness: $200B total cost to US, 58% do not
+                receive care
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Student population is acutely underserved
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Huge demand for mental health support
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    50% of college students experience debilitating anxiety and
+                    depression
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Problems are growing in prevalence and severity
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Ex: Stanford CAPS: has ~2 week wait time, which is too long
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Up to 75% of students who need help do not receive it
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Cost, stigma, time
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Created a Facebook Messenger bot, woebot
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Randomized controlled trial results: control vs. woebot
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    High engagement: users interacted with wombat 12.12 days
+                    out of 14 day period
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    High satisfaction: 4.3/5
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Very high acceptability: users report emotional stability
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Those who talked to the chatbot relieved significant
+                    symptoms of depression
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Chatbots make good therapists
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Talk to bot, you may open up more than if you talk to
+                    human; slower to open up to a human; bots don't judge you
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Non-human, integrated in everyday life, customized therapy
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    You're not bothering anyone in the middle of the night
+                    (i.e. feel less guilty to talk to a bot at 2am rather than
+                    call a clinician)
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Therapy is super social important and unmet need.
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Application of healthcare that impacts so many people
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                AI is at the stage -- specifically NLP (natural language
+                processing) -- where bots are able to have rudimentary
+                understanding
+            </p>
+        </li>
+    </ul>
+</ul>
+<br/>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Healthcare is influencing the way we build software
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Silicon Valley: have standard ways to develop a mobile app
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    PM has a wireframe, which the engineer builds
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    Woebot: not as important what the UI/UX looks like per se;
+                    more important what the actual content of the chatbot is
+                </p>
+            </li>
+        </ul>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            In conclusion, seen IT and AI transform several different
+            industries
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            I think this is a good time to get into AI as well
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                A lot of this stuff is new; just implemented in the last 2
+                years
+            </p>
+        </li>
+    </ul>
+</ul>
+<br/>
+<p dir="ltr">
+    Q&amp;A:
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            How do we train a supervised learning model when gold standard is
+            subjective (e.g. two clinicians may not agree on a given diagnosis)
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Definitely the case, so often get multiple labels for data
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Pranav's project: Computer agreed with a human more often than
+                human with human, helping indicate the model is doing something
+                substantial
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Averaging the intuition of humans
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Healthcare is notorious for being difficult for clinical/regulatory
+            approval and sustainable business model. Is this a challenge for
+            adoptions in AI? What are ways to mitigate this?
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Many healthcare entrepreneurs spend 50% innovating/50% worrying
+                about regulation
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                Among entrepreneurial communities debate:
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    1) pursue consumerization route (Fitbit)
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    2) pursue regulatory approval
+                </p>
+            </li>
+        </ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                AI is blackbox
+            </p>
+        </li>
+        <ul>
+            <li dir="ltr">
+                <p dir="ltr">
+                    We are comfortable taking drugs whose biological function
+                    we don't really understand, but clinical trial shows it
+                    works
+                </p>
+            </li>
+            <li dir="ltr">
+                <p dir="ltr">
+                    AI can be treated the same
+                </p>
+            </li>
+        </ul>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Ethical issues in healthcare. People may not want to know with
+            certainty particular facts (e.g. date of death with high
+            probability)
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Can do a lot of good and a lot of harm just like electricity
+            </p>
+        </li>
+    </ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Challenge of labeling datasets when the process if costly (e.g.
+            requires clinicians)
+        </p>
+    </li>
+    <ul>
+        <li dir="ltr">
+            <p dir="ltr">
+                Limits availability of labeled data
+            </p>
+        </li>
+        <li dir="ltr">
+            <p dir="ltr">
+                We will evolve better and better processes to labeling data
+                efficiently; crowdsourcing
+            </p>
+        </li>
+    </ul>
+</ul>
