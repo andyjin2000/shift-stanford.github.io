@@ -28,6 +28,9 @@ h2 {
   color: #ff1a1a;
   font-family: 'Montserrat', sans-serif;
 }
+#prevwebsite {
+  text-align: center;
+}
 h4 {
   margin: 0;
 }
@@ -85,7 +88,7 @@ img {
 .organizer-items .item {
   float: left;
   text-align: center;
-  width: 25%;
+  width: 30%;
   box-sizing: border-box;
   padding: 10px;
 }
