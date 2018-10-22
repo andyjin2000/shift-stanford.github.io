@@ -13,10 +13,9 @@ a:visited {
 #subscribe a, #subscribe a:visited {
   color: blue;
 }
-.notes, .notes:visited {
+.notes, .notes:visited, .video, .video:visited {
   color: green;
 }
-
 li {
   margin: 1em 0;
 }
