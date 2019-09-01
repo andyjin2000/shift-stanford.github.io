@@ -9,13 +9,13 @@ So if you're creating the website iteration for 2019:
 Now edit index.html to be up to date for the new year! At the minimum that'll require:
 - Adding images for speakers in img/
 - Editing index.html for a speaker with:
---- The date they are speaking
---- The path to their image
---- The link to a bio
---- The speaker name 
---- The speaker title 
---- A video if you have it 
+ - The date they are speaking
+ - The path to their image
+ - The link to a bio
+ - The speaker name 
+ - The speaker title 
+ - A video if you have it 
 
 Some of the introductory text at the top of the website will
 also have to change and ideally a new link is added to point
-to the previous iteration of the course.
+to the previous iteration of the course's website.
