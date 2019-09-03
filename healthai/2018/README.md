@@ -1,4 +1,4 @@
-~2018 Archived Folder~
+2018 Archived Folder
 
 
 To create a website for a new year, copy all the current files and folders EXCEPT for 
