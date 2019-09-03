@@ -1,3 +1,6 @@
+~2018 Archived Folder~
+
+
 To create a website for a new year, copy all the current files and folders EXCEPT for 
 the past folders (i.e. the name of the folder is a year) in a new folder with the name of the 
 past year.
